@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Web nejen o rootování androidů">
+    <meta name="keywords" content="download">
+    <meta name="robots" content="index,follow" />
+    <meta name="viewport" content="width=480">
+    <link rel="stylesheet" type="text/css" href="css/style-main.css">
+    <script type="text/javascript" src="javascript/jquery.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <title>get.drojd.cz</title>
+    <style type="text/css">
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div id="logo">
+                <img src="drojd.png" width="80">
+            </div>
+
+            <nav class="right-top">
+                <ul>
+                    <li>
+                        <div id="cart"><span class="cart_c">5</span>
+                            <i class="fa fa-shopping-cart fa-2x"></i>
+
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa fa-search" id="s-i"></i>
+                        <input type="text"><i class="fa fa-times" id="c-t"></i>
+
+
+                    </li>
+                    <li><a href="asd">Kontakt</a>
+                    </li>
+                    <li>Můj účet</li>
+                </ul>
+
+
+            </nav>
+            <div id="clear" style="clear: both;"></div>
+
+
+            <nav class="main-nav">
+                <ul>
+                    <li>Blog</li>
+                    <li>Mobily</li>
+                    <li>tablety</li>
+                    <li>Domů</li>
+                </ul>
+
+            </nav>
+
+        </header>
+        <div id="items-nav">
+            <span>Domů </span><span class="oddelovac">></span>
+            <span>Produkty</span><span class="oddelovac">></span>
+            <strong>Stránka 1 z 1</strong>
+
+        </div>
+
+
+
+        <div id="shop-content">
+
+
+            <div id="item-option">
+                <h1>Chytré telefony</h1>
+                <div class="option">
+                    od
+                    <select name="ovoce">
+                        <option value="jb">Nejlevnější</option>
+                        <option value="hs" selected="selected">Nejlevnější</option>
+                    </select>
+                </div>
+                <div class="option">
+                    Setřídit podle:
+                    <select name="ovoce">
+                        <option value="jb">Ceny</option>
+                        <option value="hs" selected="selected">A - Z</option>
+                    </select>
+                </div>
+
+            </div>
+            <div id="clear" style="clear: both;"></div>
+            <div id="items">
+                <div class="item">
+                    <a href="detail.php">
+                        <img src="nexus.jpg" width="230" height="230">
+                    </a>
+                    <p><a href="detail.php">Nexus 6</a>
+                    </p>
+                    <span class="title">Telefon</a></span>
+                    <span class="price">2 799,-</span>
+
+                </div>
+
+
+
+
+
+                <div id="clear" style="clear: both;"></div>
+            </div>
+
+
+            <div id="pages">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                </ul>
+                <div id="clear" style="clear: both;"></div>
+            </div>
+
+
+        </div>
+        <script type="text/javascript">
+            $("#s-i").click(function() {
+                $(".right-top input").show();
+                $(".right-top input").animate({
+                    "width": "130px"
+                });
+                $("#c-t").show(150);
+
+            });
+
+            $("#c-t").click(function() {
+                $("#c-t").hide(150);
+                $(".right-top input").animate({
+                    "width": "0px"
+                }, 500, function() {
+                    $(".right-top input").hide();
+
+
+                });
+                //$("#c-t").hide(150);
+                //$(".right-top input").hide();
+            });
+        </script>
+
+
+        <footer>
+            <div id="footer-c">
+                <a href="/rss"><img src="footer_rss.png" width="35">
+                </a>
+                <a href="http://github.com/kubp"><img src="footer_github.png" width="35">
+                </a>
+                <span>&copy; Drojd.cz</span>
+            </div>
+
+                 <div id="footer-list">
+                <ul>
+               
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="footer-label"></li>
+   
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="footer-label"></li>
+                
+                </ul>
+
+
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Web nejen o rootování androidů">
+    <meta name="keywords" content="download">
+    <meta name="robots" content="index,follow" />
+    <meta name="viewport" content="width=480">
+    <link rel="stylesheet" type="text/css" href="css/style-main.css">
+    <script type="text/javascript" src="javascript/jquery.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <title></title>
+    <style type="text/css">
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div id="logo">
+                <img src="drojd.png" width="80">
+            </div>
+
+            <nav class="right-top">
+                <ul>
+                    <li>
+                        <div id="cart"><span class="cart_c">5</span>
+                            <i class="fa fa-shopping-cart fa-2x"></i>
+
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa fa-search" id="s-i"></i>
+                        <input type="text"><i class="fa fa-times" id="c-t"></i>
+
+
+                    </li>
+                    <li><a href="asd">Kontakt</a>
+                    </li>
+                    <li>Můj účet</li>
+                </ul>
+
+
+            </nav>
+            <div id="clear" style="clear: both;"></div>
+
+
+            <nav class="main-nav">
+                <ul>
+                    <li>Blog</li>
+                    <li>Mobily</li>
+                    <li>tablety</li>
+                    <li>Domů</li>
+                </ul>
+
+            </nav>
+
+        </header>
+
+
+
+
+        <div id="shop-content">
+
+
+            <h1>Chytré telefony</h1>
+
+
+            <div id="cart-t">
+
+                <table>
+
+                    <tr>
+                        <td>sdasd</td>
+                        <td>sdaasd</td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>asdasd</td>
+                        <td>asdsadsdass</td>
+                    </tr>
+                    <tr>
+                        <td>sdasd</td>
+                        <td>sdaasd</td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>asdasd</td>
+                        <td>asdsadsdass</td>
+                    </tr>
+                    <tr>
+                        <td>sdasd</td>
+                        <td>sdaasd</td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>asdasd</td>
+                        <td>asdsadsdass</td>
+                    </tr>
+
+                </table>
+
+
+
+
+
+            </div>
+
+
+            <div id="pages">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                </ul>
+                <div id="clear" style="clear: both;"></div>
+            </div>
+
+
+        </div>
+        <script type="text/javascript">
+            $("#s-i").click(function() {
+                $(".right-top input").show();
+                $(".right-top input").animate({
+                    "width": "130px"
+                });
+                $("#c-t").show(150);
+
+            });
+
+            $("#c-t").click(function() {
+                $("#c-t").hide(150);
+                $(".right-top input").animate({
+                    "width": "0px"
+                }, 500, function() {
+                    $(".right-top input").hide();
+
+
+                });
+                //$("#c-t").hide(150);
+                //$(".right-top input").hide();
+            });
+        </script>
+
+
+        <footer>
+            <div id="footer-c">
+                <a href="/rss"><img src="footer_rss.png" width="35">
+                </a>
+                <a href="http://github.com/kubp"><img src="footer_github.png" width="35">
+                </a>
+                <span>&copy; Drojd.cz</span>
+
+            </div>
+            <div id="footer-list">
+                <ul>
+                    <li class="footer-label">Sociální sítě</li>
+                    <li><a href="http://twitter.com/J_Dolezal">@J_Dolezal</a>
+                    </li>
+                    <li><a href="https://plus.google.com/+JakubDoležal1">+DoležalJakub1</a>
+                    </li>
+                    <li><a href="http://facebook.com/jakub.dolezal.129">jakub.dolezal.129</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="footer-label">Tvorba</li>
+                    <li><a href="http://www.motylidefekt.eu">motylidefekt.eu</a>
+                    </li>
+                    <li><a href="http://www.odstranimegraffiti.cz">odstanimegraffiti.cz</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="footer-label">Spolupracuji</li>
+                    <li><a href="http://sfmcloud.com">sfmcloud.com</a>
+                    </li>
+                    <li><a href="/spoluprace">spolupracovat</a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
