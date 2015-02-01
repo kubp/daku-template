@@ -477,3 +477,34 @@ footer  a {
    
 
    }
+
+.clear{
+	clear:both;
+}
+ /* Cart style */
+.thumbnail-cart{
+	width:80px;
+	height:80px;
+}
+.ammount{
+	widht:200px;
+}
+.cart-item{
+	border-bottom: 1px solid #DDD;
+	display: block;
+}
+.item-title-cart{
+
+}
+.recount{
+	cursor:pointer;
+	transition:500ms;
+}
+.recount:hover .fa-refresh{
+	transform:rotate(180deg);
+	transition:500ms;
+}
+.delete-from-cart{
+	cursor: pointer;
+	color:rgba(200,95,95,0.8);
+}
