@@ -10,6 +10,7 @@
 ###Ruzne
 - [ ] Opravit table v bucket.html
 - [ ] Tagy asi samostatna tabulka
+- [ ] Mobilni aplikace spojena s API 
 
 ###Navrh databaze user
 - [ ] Jmeno, přijmení, id uzivatele, 
@@ -23,4 +24,5 @@
 - [ ] Registrace
 - [ ] Login
 - [ ] Spojit
+- [ ] Kontrola transakce (zalohy)
 [Hříbek je superman](http://images.elephantjournal.com/wp-content/uploads/2012/03/Superman.jpg "Superman")
