@@ -1,6 +1,6 @@
 # Daku e-shop
 
-Náš první e-shop napsaná v nette. Budeme se snažit o:
+Náš první e-shop napsaný v nette. Budeme se snažit o:
 
   - OOP
   - Čístý návrh php

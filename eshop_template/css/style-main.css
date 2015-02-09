@@ -466,6 +466,7 @@ footer  a {
 }
    #cart-t table{
    	width: 100%;
+   	border-spacing: 15px;
 }
 .clear{
 	clear:both;
@@ -478,10 +479,7 @@ footer  a {
 .ammount{
 	widht:200px;
 }
-.cart-item{
-	border-bottom: 1px solid #DDD;
-	display: block;
-}
+
 .item-title-cart{
 width: 33%;
 }
@@ -501,6 +499,11 @@ width: 33%;
 .price{
 	width:23%;
 }
+
+.quantity{
+	width:30px;
+}
+
 .shop-content{
 	width:100%;
 	float:left;	
