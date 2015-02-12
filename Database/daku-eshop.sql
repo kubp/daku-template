@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `cart` (
   `customer_id` int(11) NOT NULL,
   `price_cart` float NOT NULL,
   `payed` tinyint(1) NOT NULL DEFAULT '0',
-  `date` date NOT NULL
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_cs;
 
 TRUNCATE TABLE `cart`;
@@ -20,15 +20,17 @@ CREATE TABLE IF NOT EXISTS `customer` (
 `customer_id` int(11) NOT NULL,
   `name` varchar(100) COLLATE latin1_general_cs NOT NULL,
   `adress` varchar(100) COLLATE latin1_general_cs NOT NULL,
-  `phone` varchar(100) COLLATE latin1_general_cs NOT NULL,
+  `phone` varchar(50) COLLATE latin1_general_cs NOT NULL,
   `mail` varchar(100) COLLATE latin1_general_cs NOT NULL,
-  `password` varchar(100) COLLATE latin1_general_cs DEFAULT NULL
+  `password` varchar(100) COLLATE latin1_general_cs DEFAULT NULL,
+  `joined` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_cs;
 
 TRUNCATE TABLE `customer`;
 CREATE TABLE IF NOT EXISTS `item` (
 `item_id` int(11) NOT NULL,
   `item_name` varchar(250) COLLATE latin1_general_cs NOT NULL,
+  `description` varchar(250) COLLATE latin1_general_cs NOT NULL,
   `price` float NOT NULL,
   `in_stock` int(11) NOT NULL,
   `category` varchar(250) COLLATE latin1_general_cs NOT NULL
@@ -49,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `transaction` (
   `customer_id` int(11) NOT NULL,
   `cart_id` int(11) NOT NULL,
   `balance_recieved` float NOT NULL,
-  `date` date NOT NULL COMMENT 'CURRENT_TIMESTAMP'
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_cs;
 
 TRUNCATE TABLE `transaction`;
