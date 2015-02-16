@@ -76,7 +76,7 @@ input[type="number"]:focus{
 	border-bottom: 1px solid rgb(222,222,222);
 	  color: rgb(90,80,90);
 	  height: 18px;
-	  flosat: right;
+	  float: right;
 	  font-size: 15px;
 	  margin-top: -2px;
 	  padding-left: 5px;
@@ -90,7 +90,7 @@ input[type="number"]:focus{
 	border-bottom: 1px solid rgb(222,222,222);
 	  color: rgb(90,80,90);
 	  height: 18px;
-	  flosat: right;
+	  float: right;
 	  font-size: 15px;
 	  margin-top: -2px;
 	  padding-left: 5px;
@@ -521,31 +521,29 @@ width: 33%;
 @media screen and (max-width: 480px) {
 	#content{
  		width:100%;
-}		
- header{
- 	height: 180px;
- }
-     .right-top{
-     	width:100%;
-     }
+}	
+
+
+#search-mobile{
+	display:block;
+	margin-top: 10px;
+}
+
+     
      #shop-content{
 	width:100%;
 }
 
+.right-top{
+	width:100%;
+	height:50px;
+	margin-top: 20px;
+}
+.right-top li{
+	margin-top: 7px;
+}
 
-.right-top li a,
-#account{
-display:none;
-	}
-#search-m{
-		display:block;
-		clear:both;
-		margin-top: 35px;
-	}
-	#cart{
-	margin-top: -50px;
-	float:right;
-	}
+
 #logo{
 	width:40px;
 	height: 40px;
@@ -561,23 +559,13 @@ display:none;
 }
 .main-nav ul{
 	float:left;
+	margin-top: 55px;
 }
 .main-nav ul li{
-	float:;
-	margin: 10px;
+	float:left;
+	margin-top: 15px;
 }
-#acc{
-	display:block !important;
-}
-#acc li a{
-margin:30px;
-}
-#acc li a, 
-#accs{
-margin-top:180px;
-display:block;
-float:left;
-}
+
 footer {
 	width:100%;
   height: 480px;
@@ -592,4 +580,50 @@ footer {
 	margin-top: 50px;
 	margin-left: 0px;
 }
+}
+#form-login-register input{
+
+		width:210px;
+		outline-style:none;
+		box-shadow:none;
+		background-color: #f9f9f9;
+		border: 1px solid silver;
+		height:30px;
+		padding-top: 3px;
+		text-indent: 7px;
+		border-radius: 4px;
+}
+#form-login-register input:hover{
+		 border:1px solid rgb(123,183,95);
+}
+#form-login-register input:focus{
+		 border:1px solid rgb(123,183,95);
+}
+#form-login-register input[type="submit"]{
+		margin-top: 10px;
+		text-indent: 0px;
+		color:white;
+		padding-top: 5px;
+		height:30px;
+		float:left;
+		width:100px;
+		background-color: #f45b4f;
+}
+.title-form{
+	vertical-align: bottom;
+	height:40px;}
+
+
+@media screen and (max-width: 655px){
+.right-top{
+	
+		width:100%;
+	}
+	#s-i{
+		display:none;
+	}
+	.main-nav{
+		height:200px;
+	}
+
 }

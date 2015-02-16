@@ -3,19 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="###">
+    <meta name="description" content="Web nejen o rootování androidů">
     <meta name="keywords" content="download">
     <meta name="robots" content="index,follow" />
     <meta name="viewport" content="width=480">
     <link rel="stylesheet" type="text/css" href="css/style-main.css">
+    <script type="text/javascript" src="javascript/jquery.js"></script>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <title></title>
     <style type="text/css">
     </style>
-</head>
+    </head>
+	<body>
 
-<body>
-    <div id="content">
+<div id="content">
         <header>
             <div id="logo">
                 <img src="drojd.png" width="80">
@@ -47,6 +48,8 @@
 
             <nav class="main-nav">
                 <ul>
+                	  <li id="search-mobile"><a href="asd">Vyhledavani</a>
+                    </li>
                     <li>Blog</li>
                     <li>Mobily</li>
                     <li>tablety</li>
@@ -55,80 +58,54 @@
 
             </nav>
 
-        </header>
- <div id="shop-content">
-
-
-            <h1>Chytré telefony</h1>
-
-
-            <div id="cart-t">
-
-                <table cellspacing="10">
-
-                    <tr class="cart-item">
-                            <td><img src="img/nexus.jpg" alt="" class="thumbnail-cart"></td>
-                            <td class="item-title-cart">Model telefonu ano</td>
-                            <td>
-                                <input type="number" name="quantity" class="quantity" min="1" max="5" value="1">
-                            </td>
-                            <td class="price">80Kč</td>
-                            <td class="recount"><i class="fa fa-refresh" title="Přepočítat"></i></td>
-                            <td class="delete-from-cart"><i class="fa fa-trash-o" title="Smazat"></i></td>
-                    </tr>
-
-
-                </table>
-
-
-
-
-
-            </div>
-
-
-            <div id="pages">
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                </ul>
-                <div id="clear" style="clear: both;"></div>
-            </div>
-
-
-        </div>
-    
-
-            </nav>
-            <div id="clear" style="clear: both;"></div>
-
-
-        <script type="text/javascript">
-            $("#s-i").click(function() {
-                $(".right-top input").show();
-                $(".right-top input").animate({
-                    "width": "130px"
-                });
-                $("#c-t").show(150);
-
-            });
-
-            $("#c-t").click(function() {
-                $("#c-t").hide(150);
-                $(".right-top input").animate({
-                    "width": "0px"
-                }, 500, function() {
-                    $(".right-top input").hide();
-
-
-                });
-                //$("#c-t").hide(150);
-                //$(".right-top input").hide();
-            });
-        </script>
-
-
-        <footer>
+	<div class="title">
+		<h1>Registrace</h1>
+	</div>
+	<div id="form-login-register">
+		<table id="form-account">
+	<form id="register" method="POST">
+<tr>
+	<td class="title-form">E-mail:</td>
+</tr>
+	<td><input type="text" placeholder="Email" name="mail" /> </td>
+</tr>
+<tr>
+	<td class="title-form">Heslo:</td>
+</tr>
+<tr>
+<td><input type="password" placeholder="Heslo" name="password" /> </td>
+</tr>
+<tr>
+	<td class="title-form">Potvrzení hesla:</td>
+</tr>
+	<td><input type="password" placeholder="Heslo" name="password" /> </td>
+</tr>
+<tr>
+	<td class="title-form">Jméno:</td>
+</tr>
+<tr>
+	<td> <input type="text" placeholder="Jméno" name="name" /> </td>
+</tr>
+<tr>
+	<td class="title-form">Adresa:</td>
+</tr>
+<td> <input type="text" placeholder="Adresa" name="adress"/></td>
+</tr>
+<tr>
+	<td class="title-form">Telefon:</td>
+</tr>
+<tr>
+<td> <input type="text" placeholder="Telefon" name="phone"/></td>
+</tr>
+<tr>
+	<td><input type="submit" value="Registracovat"/></td>
+</tr>
+</form>
+</table>
+</div>
+	
+		   <div id="clear" style="clear: both;"></div>
+   <footer>
             <div id="footer-c">
                 <a href="/rss"><img src="footer_rss.png" width="35">
                 </a>
@@ -168,7 +145,7 @@
             </div>
         </footer>
     </div>
-
-</body>
-
+		   
+		
+	</body>
 </html>
