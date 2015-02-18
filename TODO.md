@@ -10,7 +10,6 @@
 ###Ruzne
 - [x] Opravit table v bucket.html
 - [ ] <s> Tagy asi samostatna tabulka </s>
-- [ ] Mobilni aplikace spojena s API 
 
 ###Navrh databaze user
 - [x] Jmeno, přijmení, id uzivatele, 
@@ -19,6 +18,17 @@
 ###Navrh databaze last login
 - [x] Foreign key(user id), timestamp
 
+###Grafik
+- [ ] Udělat vysouvaci seznam položek v košíku(po kliknutí na ikonu košíku)
+- [ ] Opravit bug: #content
+- [ ] Opravit login, tabulka
+- [ ] Udělat změnu obrázku po kliknutí(bucket.html) 
+- [ ] Detail obrázku v bucket 
+- [ ] Odkazy
+- [ ] Paticka
+- [ ] Administrace uživatele, admina
+- [ ] Mobilni aplikace spojena s API(JSON)
+- [ ] Responzivita
 
 ###Nákup, login, register
 - [ ] Registrace
