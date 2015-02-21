@@ -653,3 +653,42 @@ footer {
 	}
 
 }
+.empty{
+	 height: 80px;
+}
+
+#item-in-cart	{
+		margin:0;
+		padding:0;
+		}
+		
+#item-in-cart  li
+		{
+
+		list-style-type:none;
+		position:relative;
+
+		}
+		
+#item-in-cart li
+
+		{
+		display:block;
+		height: 50px
+		}
+		
+
+.item-menu
+		{
+
+		border-left: solid 1px rgb(221,221,221);
+		width:100px;
+		height:100px;
+		margin-top: 50px;
+		background:rgb(255,255,255);
+		position:absolute;
+	display:none;
+		}
+.item-menu tr{
+height:27px;
+}
