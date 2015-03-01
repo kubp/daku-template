@@ -3,6 +3,7 @@
     font-family: "opensans";
     src: url("http://fonts.gstatic.com/s/opensans/v10/u-WUoqrET9fUeobQW7jkRT8E0i7KZn-EPnyo3HZu7kw.woff") format("truetype");
 }
+
 body{
 	font-family: Arial;
 }
@@ -549,6 +550,7 @@ width: 33%;
 	height: 40px;
 }
 #s-i{
+
 	margin-top: 5px;
 }
 #clear{
@@ -568,7 +570,7 @@ width: 33%;
 
 footer {
 	width:100%;
-  height: 480px;
+
 }
 #footer-c{
 	margin-top:10px;
@@ -677,18 +679,23 @@ footer {
 		height: 50px
 		}
 		
-
 .item-menu
 		{
 
 		border-left: solid 1px rgb(221,221,221);
 		width:100px;
-		height:100px;
+		height:0px;
 		margin-top: 50px;
 		background:rgb(255,255,255);
 		position:absolute;
-	display:none;
+		overflow:hidden;
+		transition: all ease 0.5s;
+		
 		}
 .item-menu tr{
 height:27px;
 }
+
+
+
+section{padding-bottom:80px;}

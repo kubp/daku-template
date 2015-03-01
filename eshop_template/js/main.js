@@ -1,4 +1,5 @@
-  $("#s-i").click(function() {
+$(document).ready(function (){
+            $("#s-i").click(function() {
                 $(".right-top input").show();
                 $(".right-top input").animate({
                     "width": "130px"
@@ -19,10 +20,21 @@
                 //$("#c-t").hide(150);
                 //$(".right-top input").hide();
             });
-$("#item-in-cart li > #cart").click(function () {
-      $(this).parent().find(".item-menu").slideDown(300);
-     });
-    $("#item-in-cart li").mouseleave(function () {
-      $(this).parent().find(".item-menu").slideUp(300);
-       });
+
+
+  
+
+
+  $("#item-in-cart li > #cart").click(function(){
+    if ($(".item-menu").height() <= 0){
+      $(".item-menu").css("height","100px");
+    } else {
+      $(".item-menu").css("height","0px");
+    }
+  });
+
+
   }); 
+
+
+   
