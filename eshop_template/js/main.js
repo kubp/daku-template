@@ -24,13 +24,10 @@ $(document).ready(function (){
 
   
 
+$(".item-menu").fadeOut();
+  $("#cart").click(function(){
+    $(".item-menu").fadeIn(150);
 
-  $("#item-in-cart li > #cart").click(function(){
-    if ($(".item-menu").height() <= 0){
-      $(".item-menu").css("height","100px");
-    } else {
-      $(".item-menu").css("height","0px");
-    }
   });
 
 
