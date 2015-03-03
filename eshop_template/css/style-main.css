@@ -10,6 +10,10 @@ body{
 #logo{
 	float:left;
 }
+#logo img{
+	width: 150px;
+	height:150px;
+}
 header{
 	height: 218px;
 	border-bottom: 1px solid rgb(221,221,221);
@@ -142,6 +146,7 @@ float: right;
 }
 .main-nav{
 height: 53px;
+margin-top: -70px
 
 }
 
@@ -591,6 +596,7 @@ footer {
 	background-color: #f9f9f9;
 	border: 1px solid silver;
 	height:30px;
+	width: 270px;
 	padding-top: 3px;
 	text-indent: 7px;
 	border-radius: 2px;
@@ -603,7 +609,7 @@ footer {
 }
 #form-login-register input:focus{
 	box-shadow:inset 0px 0px 3px rgba(0,0,0,0.20);
-	border:1px solid rgb(126,202,57);
+	border:1px solid rgb(123,183,95);
 }
 #form-login-register input[type="submit"]{
 	background-color: rgb(126,202,57);
@@ -694,6 +700,7 @@ footer {
 	z-index: 1500;
 	box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
 	cursor: default;
+
 	
 		
 		}
