@@ -4,6 +4,7 @@
 - [x] **Produkty** Ruzné sekce(mobily, tablety, notebooky)
 - [x] Jednotlivé položky: Nadpis, popis(krátky), popis(dlouhý), cena
 - [x] Spojit položky **foreign** keyem(produkty ->položky)
+- [x] Slevové kupony + tabulka
 - [ ] <s> Asi mít v databázi kolik obrázků?? </s>
 
 
@@ -33,7 +34,7 @@
 ###Nákup, login, register
 - [ ] Registrace
 - [ ] Login
-- [ ] Spojit
+- [x] Spojit
 - [x] Kontrola transakce  
 - [ ] Zalohy
 - [Hříbek je superman](http://images.elephantjournal.com/wp-content/uploads/2012/03/Superman.jpg "Superman")

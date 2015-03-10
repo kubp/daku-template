@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `transaction` (
 
 
 ALTER TABLE `cart`
- ADD PRIMARY KEY (`cart_id`), ADD UNIQUE KEY `customer_id_2` (`customer_id`), ADD KEY `customer_id` (`customer_id`);
+ ADD PRIMARY KEY (`cart_id`), ADD  KEY `customer_id_2` (`customer_id`), ADD KEY `customer_id` (`customer_id`);
 
 ALTER TABLE `customer`
  ADD PRIMARY KEY (`customer_id`);
@@ -72,13 +72,13 @@ ALTER TABLE `item`
  ADD PRIMARY KEY (`item_id`);
 
 ALTER TABLE `list`
- ADD PRIMARY KEY (`list_id`), ADD UNIQUE KEY `item_id` (`item_id`,`cart_id`), ADD UNIQUE KEY `promo_code_id` (`promo_code_id`), ADD KEY `cart_id` (`cart_id`);
+ ADD PRIMARY KEY (`list_id`), ADD KEY `item_id` (`item_id`,`cart_id`), ADD KEY `promo_code_id` (`promo_code_id`), ADD KEY `cart_id` (`cart_id`);
 
 ALTER TABLE `promo_code`
  ADD PRIMARY KEY (`promo_code_id`);
 
 ALTER TABLE `transaction`
- ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `customer_id` (`customer_id`,`cart_id`), ADD KEY `cart_id` (`cart_id`);
+ ADD PRIMARY KEY (`id`), ADD KEY `customer_id` (`customer_id`,`cart_id`), ADD KEY `cart_id` (`cart_id`);
 
 
 ALTER TABLE `cart`
