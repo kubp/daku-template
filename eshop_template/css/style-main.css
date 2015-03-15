@@ -483,7 +483,7 @@ footer  a {
 	height:80px;
 }
 .ammount{
-	widht:200px;
+	width:200px;
 }
 
 .item-title-cart{
@@ -499,8 +499,8 @@ width: 33%;
 	transition:500ms;
 }
 .delete-from-cart{
-	cursor: pointer;n
-	color:rgba(200,95,95,0.8);
+	cursor: pointer;
+	color: rgb(200,95,95);
 }
 .price{
 	width:23%;
@@ -550,10 +550,7 @@ width: 33%;
 }
 
 
-#logo{
-	width:40px;
-	height: 40px;
-}
+
 #s-i{
 
 	margin-top: 5px;
@@ -665,46 +662,53 @@ footer {
 	 height: 80px;
 }
 
-#item-in-cart	{
-		margin:0;
-		padding:0;
-		}
-		
-#item-in-cart  li
-		{
-
-		list-style-type:none;
-		position:relative;
-
-		}
-		
-#item-in-cart li
-
-		{
-		
-		height: 50px
-		}
-		
-
 
 .item-menu
 		{
-	border: solid 1px rgb(221,221,221);
-	margin-top: 30px;
+	
 	margin-left: -80px;
 	color: black;
 	width: 150px;
 	height: 140px;
 	position: absolute;
 	background-color: white;
-	z-index: 1500;
+	height:0px;
+	overflow:hidden;
 	box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
 	cursor: default;
 
 	
 		
 		}
+		#shop-menu{ opacity:0;
+			height: 0px;
+			width: 150px;
+		}
+			#cart:hover #shop-menu{
+				height:140px;
+				opacity:1;
+
+			}
+			#cart:hover .item-menu{
+				margin-top: 30px;
+				border: solid 1px rgb(221,221,221);
+			}
+	
+		#category:hover .item-menu  {
+			height: 160px;
+			overflow:visible;
+			opacity:1;
+			margin-left: -48px;
+				border: solid 1px rgb(221,221,221);
+			border-top: solid  0px rgb(221,221,221);
+	}
+			#category:hover{
+			    color: rgb(123,183,95);
+			    cursor:pointer;
+			} 
+
 .item-menu li{
+
 	margin: 0px;
 	text-align: center;
 	float: none;
@@ -715,6 +719,13 @@ footer {
 	cursor: pointer;
 
 }
+#cart:hover .item-menu {
+	height:140px;
+overflow:visible;
+opacity:1;
+}
+
+
 .item-menu li:hover{
 	background-color: rgb(240,240,240);
 }
@@ -723,6 +734,7 @@ footer {
 	margin-left: -40px;
 	margin-top: 8px;
 }
+
 .arrow{
 	position: absolute;
 	width: 0px;

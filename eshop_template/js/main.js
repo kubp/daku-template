@@ -24,11 +24,11 @@ $(document).ready(function (){
 
   
 
-$(".item-menu").fadeOut();
-  $("#cart").click(function(){
-    $(".item-menu").fadeIn(150);
+//$(".item-menu").fadeOut();
+ // $("#cart").click(function(){
+ //   $(".item-menu").fadeIn(150);
 
-  });
+ // });
 
 
   }); 
