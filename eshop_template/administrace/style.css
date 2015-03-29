@@ -1,0 +1,95 @@
+#content{
+	width:1000px;
+	margin: 0px auto;
+}
+nav{
+	float:right;
+
+}
+#right-nav a{
+	color: rgb(246,97,113);
+	text-decoration: none;
+	font-size: 18px;
+
+}
+#right-nav li{
+list-style-type: none;
+	margin-top: 12px;
+}
+#order{
+	width:300px;
+	height:450px;
+	float:left;
+	border:solid 1px rgb(221,221,221);
+}
+#order table{
+width:300px;
+margin-top: 20px;	}
+table tr{
+	height: 30px;
+}
+
+#last_order{
+	margin-top: 500px;
+	border:solid 1px rgb(221,221,221);
+}
+#last_order table{
+	width:600px;
+
+}
+
+
+#customer-table table{
+	width:1200px;
+	margin: 0px auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+ }
+
+#customer-table td{
+	width:150px;
+	height:50px;
+}
+#customer-table img{
+	width:22px;
+	height:22px;
+	cursor:pointer;
+
+}
+#search-table{
+margin-top: 150px;
+}
+#search-table table td{
+	height:50px;
+	width:500px;
+}
+
+#search-table input[type="text"],input[list]{
+		margin-bottom: 15px;
+	outline-style:none;
+	box-shadow:none;
+	background-color: #f9f9f9;
+	border: 1px solid silver;
+	height:30px;
+	width: 200px;
+	padding-top: 3px;
+	text-indent: 7px;
+	border-radius: 2px;
+	box-shadow:inset 0px 0px 3px rgba(0,0,0,0.10);
+	transition:border 0.3s, box-shadow 0.2s;
+}
+
+#search-table input[type="submit"]{
+	background-color: rgb(126,202,57);
+	padding: 10px 14px;
+
+	border: none;
+	border-radius: 2px;
+	color: #fff;
+
+
+	font-weight:bold;
+	cursor: Pointer;
+	font-family: Arial;
+	transition:background-color 0.3s, box-shadow 0.2s;
+}

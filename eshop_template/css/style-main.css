@@ -473,6 +473,7 @@ footer  a {
    #cart-t table{
    	width: 100%;
    	border-spacing: 15px;
+   	border-bottom:1px solid rgb(221,221,221);
 }
 .clear{
 	clear:both;
@@ -665,25 +666,28 @@ footer {
 
 .item-menu
 		{
-	
-	margin-left: -80px;
+	border: solid 1px rgb(221,221,221);
+	opacity:1;
+
+	margin-left: -100px;
 	color: black;
-	width: 150px;
-	height: 140px;
+	width: 250px;
+	height: 280px;
 	position: absolute;
 	background-color: white;
+	z-index: 1500;
 	height:0px;
 	overflow:hidden;
 	box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
 	cursor: default;
+	padding-left: 20px
 
 	
 		
 		}
 		#shop-menu{ opacity:0;
 			height: 0px;
-			width: 150px;
-		}
+			width: 150px;}
 			#cart:hover #shop-menu{
 				height:140px;
 				opacity:1;
@@ -691,24 +695,54 @@ footer {
 			}
 			#cart:hover .item-menu{
 				margin-top: 30px;
-				border: solid 1px rgb(221,221,221);
 			}
+		#category-menu
+		{
 	
-		#category:hover .item-menu  {
+	
+	margin-left: -48px;
+	color: black;
+	width: 150px;
+	opacity: 0;
+	position: absolute;
+	background-color: white;
+	z-index: 1500;
+	height:0px;
+	overflow:hidden;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
+	cursor: default;
+
+
+	
+		
+		}
+		#category:hover #category-menu  {
 			height: 160px;
 			overflow:visible;
 			opacity:1;
-			margin-left: -48px;
 				border: solid 1px rgb(221,221,221);
 			border-top: solid  0px rgb(221,221,221);
+
+
 	}
 			#category:hover{
 			    color: rgb(123,183,95);
 			    cursor:pointer;
+
 			} 
+		#category-menu li{
+	margin-top: 5px;
+	text-align: center;
+	float: none;
+	color: #888;
+	width: 136px;
+	list-style-type: none;
+	padding: 7px;
+	cursor: pointer;
+		}
 
 .item-menu li{
-
+	
 	margin: 0px;
 	text-align: center;
 	float: none;
@@ -720,19 +754,25 @@ footer {
 
 }
 #cart:hover .item-menu {
-	height:140px;
+	height:210px;
 overflow:visible;
 opacity:1;
+
 }
 
+#category-menu li:hover{
+	background-color: rgb(240,240,240);
 
+}
 .item-menu li:hover{
 	background-color: rgb(240,240,240);
+
 }
 
 .item-menu ul{
 	margin-left: -40px;
 	margin-top: 8px;
+
 }
 
 .arrow{
@@ -759,3 +799,72 @@ opacity:1;
 
 
 section{padding-bottom:80px;}
+#buy{
+	float:right;
+	margin-top: 50px;
+	
+
+}
+#buy button{
+	font-size: 12px;
+padding: 10px 25px;
+	margin-left: 30px;
+font-weight:bold;
+cursor: pointer;
+font-family: Arial;
+}
+	#buy-button{
+	background-color: rgb(126,202,57);
+	border: 1px solid rgb(126,202,57);
+	color: rgb(255,255,255);
+	transition:background-color 0.3s, box-shadow 0.2s;
+
+}
+#cancel-button{
+	background-color:rgb(255,255,255);
+	border: 1px solid rgb(126,202,57);
+	transition:background-color 0.3s, box-shadow 0.2s;
+	}
+#buy-button:hover{
+	background-color: #7e9e00;
+}
+
+#buy-button-cart{
+	background-color: rgb(126,202,57);
+	border: 1px solid rgb(126,202,57);
+	color: rgb(255,255,255);
+	transition:background-color 0.3s, box-shadow 0.2s;
+}
+#cancel-button-cart{
+
+	background-color:rgb(255,255,255);
+	border: 1px solid rgb(126,202,57);
+
+	}
+	#buy-button-cart:hover{
+	background-color: #7e9e00;
+}
+#shop-menu img{
+		float:left;
+		margin-left:-5px;
+		}
+	#buy-cart{
+
+	float:right;
+	margin-top: 50px;
+
+	}
+#buy-cart button{
+	font-size: 12px;
+padding: 10px 25px;
+margin-left:0px;
+margin-right: 35px;
+font-weight:bold;
+cursor: pointer;
+font-family: Arial;
+}
+#discount img{
+	height: 280px;
+	width:100%;
+	margin-top: 5px;
+}
