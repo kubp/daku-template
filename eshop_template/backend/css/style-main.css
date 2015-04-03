@@ -1,0 +1,211 @@
+
+@font-face {
+    font-family: "opensans";
+    src: url("http://fonts.gstatic.com/s/opensans/v10/u-WUoqrET9fUeobQW7jkRT8E0i7KZn-EPnyo3HZu7kw.woff") format("truetype");
+}
+
+body{
+	font-family: Arial;
+}
+
+header{
+	height: 66px;	border-bottom: 1px solid rgb(221,221,221);
+}
+
+#logo{
+	float:left;
+}
+#logo img{
+	width: 50px;
+	height:50px;
+}
+
+nav a:link {
+    color: rgb(134,134,134);
+} /* nyl */
+nav a:visited {
+    color: rgb(134,134,134);
+} /* ner*/
+nav a:hover {
+    color: rgb(123,183,95);
+}
+nav a {
+    text-decoration: none;
+}
+select:focus{
+	border:1px solid rgb(123,183,95);
+	box-shadow:inset 1px 2px 3px rgba(0,0,0,0.15);
+	
+}
+
+ .right-top input:focus{
+ border-bottom:1px solid rgb(123,183,95);
+
+}
+
+.right-top{
+	width: 541px;
+height: 50px;
+float: right;
+	
+}
+
+.right-top li{
+	float: right;
+	margin-left: 30px;
+	list-style-type: none;
+
+}
+
+.right-top {
+	font-size: 14px;
+	margin-top: 9px;
+}
+
+
+.oddelovac{
+	font-size: 10px;
+}
+
+
+#content{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+
+
+nav{
+	color:rgb(136,136,136);
+}
+
+
+
+#edit table{
+	border: 1px solid grey;
+	   border-collapse: collapse;
+	   width: 100%;
+
+}
+#edit td,th{border: 1px solid rgb(213,213,213);padding: 10px;}
+
+#edit th{background-color: rgb(244,244,244);
+
+}
+
+#edit a{
+color: #7ECA39;
+text-decoration: none;
+}
+
+
+
+
+
+
+.buttons{
+	width: 160px;
+}
+
+
+.button{
+
+    background-color: #7ECA39;
+    padding: 5px 10px;
+    border: medium none;
+    border-radius: 2px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Arial;
+    margin-left: 4.5px;
+    transition: background-color 0.3s ease 0s, box-shadow 0.2s ease 0s;
+
+}
+
+
+.button:hover {
+    background-color: #56B939;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.12);
+}
+
+.big{
+
+  
+    padding: 10px 25px;
+ 
+}
+
+.white{
+	background-color: #fff;
+	border:1px solid  #7ECA39; 
+	color: rgb(50,50,50);
+}
+.white:hover {
+    background-color: #fff;
+	border:1px solid  #7ECA39; 
+	color: rgb(50,50,50);
+	text-shadow:none;
+}
+
+
+#form-login-register{
+	border-top: 1px solid #DDD;
+	padding-top: 10px;
+}
+
+
+
+#form-login-register input[type="text"],input[type="password"]{
+
+	margin-bottom: 15px;
+	outline-style:none;
+	box-shadow:none;
+	background-color: #f9f9f9;
+	border: 1px solid silver;
+	height:30px;
+	width: 270px;
+	padding-top: 3px;
+	text-indent: 7px;
+	border-radius: 2px;
+	box-shadow:inset 0px 0px 3px rgba(0,0,0,0.10);
+	transition:border 0.3s, box-shadow 0.2s;
+}
+
+#form-login-register input:hover{
+	border:1px solid rgb(123,183,95);
+}
+#form-login-register input:focus{
+	box-shadow:inset 0px 0px 3px rgba(0,0,0,0.20);
+	border:1px solid rgb(123,183,95);
+}
+#form-login-register input[type="submit"]{
+	background-color: rgb(126,202,57);
+	padding: 10px 14px;
+	height: 35px;
+	border: none;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 12px;
+	font-weight:bold;
+	cursor: Pointer;
+	font-family: Arial;
+	transition:background-color 0.3s, box-shadow 0.2s;
+}
+
+
+#form-login-register input[type="submit"]:hover{
+	background-color: rgb(86,185,57);
+	text-shadow:2px 1px rgba(0,0,0,0.12);
+
+
+
+
+	}
+#form-login-register input[type="submit"]:active{
+	box-shadow:inset 0px 0px 3px rgba(0,0,0,0.20);
+
+
+
+}
