@@ -6,6 +6,7 @@
 
 body{
 	font-family: Arial;
+	margin: 0px;
 }
 #logo{
 	float:left;
@@ -15,8 +16,9 @@ body{
 	height:150px;
 }
 header{
-	height: 218px;
+	height: 150px;
 	border-bottom: 1px solid rgb(221,221,221);
+	min-width: 691px;
 }
 #cart{
 	width: 48px;
@@ -27,6 +29,7 @@ float: right;
 color: #FFF;
 margin-top: -10px;
 cursor:pointer;
+margin-right: 5px;
 }
 .cart_c{
 	display: block;
@@ -146,8 +149,8 @@ float: right;
 }
 .main-nav{
 height: 53px;
-margin-top: -70px
-
+margin-top: -70px;
+	margin-right: 50px;
 }
 
 .main-nav li{
@@ -646,6 +649,7 @@ footer {
 	}
 
 
+/**
 @media screen and (max-width: 655px){
 .right-top{
 	
@@ -657,7 +661,7 @@ footer {
 	.main-nav{
 		height:200px;
 	}
-
+**/
 }
 .empty{
 	 height: 80px;
@@ -686,9 +690,12 @@ footer {
 		
 		}
 		#shop-menu{ opacity:0;
-			height: 0px;
+			position: absolute;
+right: 30px;
 			width: 150px;}
-			#cart:hover #shop-menu{
+
+
+	#cart:hover #shop-menu{
 				height:140px;
 				opacity:1;
 
@@ -754,7 +761,7 @@ footer {
 
 }
 #cart:hover .item-menu {
-	height:210px;
+	height:125px;
 overflow:visible;
 opacity:1;
 
@@ -783,7 +790,7 @@ opacity:1;
 	border-right: 9px solid transparent;
 	border-bottom: 10px solid #fff;
 	margin-top: -10px;
-	margin-left: 95px;
+	right: 7px;
 }
 .arrow-shadow{
 	position: absolute;
@@ -793,7 +800,7 @@ opacity:1;
 	border-right: 11px solid transparent;
 	border-bottom: 12px solid #DDD;
 	margin-top: -12px;
-	margin-left: 92px;
+	right: 5px;
 	z-index: 0;
 }
 
@@ -858,13 +865,13 @@ font-family: Arial;
 	font-size: 12px;
 padding: 10px 25px;
 margin-left:0px;
-margin-right: 35px;
+margin-right: 10px;
 font-weight:bold;
 cursor: pointer;
 font-family: Arial;
 }
-#discount img{
-	height: 280px;
-	width:100%;
-	margin-top: 5px;
+#discount{
+		width:100%;
+			height: 350px;
+		background: url("../img/header.jpg") no-repeat scroll 0 68% transparent;
 }

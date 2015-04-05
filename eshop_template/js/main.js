@@ -1,3 +1,14 @@
+$(function(){
+    var cislo = 0;
+    var pole = ['header2.jpg','header.jpg'];
+     setInterval(function(){
+
+   $("#discount").css("background" , "url('img/"+pole[cislo]+"') no-repeat scroll 0 68% transparent");
+   if(pole.length == cislo+1){ cislo = 0;} else { cislo ++;}
+},
+      10000);
+});
+/**
 $(document).ready(function (){
             $("#s-i").click(function() {
                 $(".right-top input").show();
@@ -32,6 +43,6 @@ $(document).ready(function (){
 
 
   }); 
-
+**/
 
    
