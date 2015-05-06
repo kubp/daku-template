@@ -89,10 +89,14 @@ nav{
 
 
 }
-#edit tr:nth-child(even) {background: #CCC}
+#edit tr{
+background-color: #e4e5e9;
+}
+
+#edit tr:nth-child(even) {background: #748398}
 #edit td,th{border: 1px solid rgb(213,213,213);padding: 10px;}
 
-#edit th{background-color: rgb(244,244,244);
+#edit th{background-color: #34578b
 
 }
 
@@ -214,6 +218,17 @@ text-decoration: none;
 }
 
 #create-row{
-	display:none;
-	margin-top: 20px;
+	margin-top: 50px;
+	height:0px;
+	overflow: hidden;
+	transition: all ease 0.5s;
+}
+
+#chart{
+	width:700px;
+	float:right;
+	margin-top: -200px;
+}
+#last_order{
+	margin-top: 100px;
 }
