@@ -78,9 +78,9 @@ function create(){
  
 
 		var cell = radek.insertCell(0);
-		var get = document.getElementById("id").value;
+		var get =""
 		cell.innerHTML = get;
-		document.getElementById('create-row').style.display ='none';
+
 }
 
 
