@@ -1,21 +1,31 @@
 $(document).ready(function() {
-$('#table-edit').dataTable( {
-  "ajax": {
-    "url": "example.php",
-    "type": "POST"
-  },
-  "data": [
-      
-        ]
-   } );
-} );
+  $("#edit_this").click(function() {
+ var data={first_cell: a, Second_cell: b, Third_cell: c, Fourth_cell: d}
 
+$.ajax({
+ url: "neco.php",
+  type: "POST",
+   data: data,
+     });
+});
+});
 
 function del(r){            //smazání řádku
   var question=confirm("Přejete si opravdu smazat?");
   if(question){
 		var delete_row = r.parentNode.parentNode.rowIndex;
+
    		document.getElementById("table-edit").deleteRow(delete_row);
+
+      var data={index: delete_row}
+
+      $.ajax({
+
+ url: "neco.php",
+  type: "POST",
+   data: data,
+     });
+
     }
 }
 function create_open(){ 
@@ -33,7 +43,8 @@ function create(){
 		var cell = radek.insertCell(0);
    		var submit = document.createElement("input");
   	 	submit.type="submit";
-  		submit.className="button"
+  		submit.className="button oneRow"
+
      	submit.setAttribute('value', "Upravit");
     	submit.setAttribute('onclick', "javascript:edit(this);");
    		var t = document.createTextNode("");
@@ -80,12 +91,13 @@ function edit(r){   //vytvoření řádku na úpravu
 	var i = r.parentNode.parentNode.rowIndex;
 	var edit_table = document.getElementById("table-edit");
 	var radek = edit_table.insertRow(i+1);
-
+document.getElementsByClassName('oneRow')[i-1].setAttribute('onclick', "javascript:();");
 	var cell = radek.insertCell(0);
     var submit = document.createElement("input");
     submit.type="submit";
     submit.className="button"
      submit.setAttribute('onclick', "javascript:edit_row(this);");
+     submit.setAttribute("id", "edit_this")
     var t = document.createTextNode("");
 	 submit.appendChild(t);
     cell.appendChild(submit);
@@ -153,11 +165,11 @@ function edit_row(r){            //Úprava konkrétního řádku
   		 if(d!=0){
    			x[4].innerHTML = d;
    		}
-  
-      
+        document.getElementsByClassName('oneRow')[i-2].setAttribute('onclick', "javascript:edit(this);");
     var delete_row = r.parentNode.parentNode.rowIndex;
     document.getElementById("table-edit").deleteRow(delete_row);
-  
+
+
 
 
 }
